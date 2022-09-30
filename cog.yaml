@@ -1,0 +1,25 @@
+build:
+  gpu: true
+  cuda: "11.1"
+  python_version: "3.9.7"
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+    - "ninja-build"
+  python_packages:
+    - "cmake==3.21.2"
+    - "ipython==7.29.0"
+    - "torchvision==0.11.1"
+    - "torch==1.11.0"
+    - "tqdm==4.62.3"
+    - "Pillow==8.4.0"
+    - "numpy==1.20.3"
+    - "opencv-python==4.6.0.66"
+    - "scipy==1.7.1"
+    - "regex==2021.8.3"
+    - "ftfy==6.1.1"
+    - "matplotlib==3.4.3"
+    - "git+https://github.com/openai/CLIP.git"
+  run:
+    - pip install dlib
+
